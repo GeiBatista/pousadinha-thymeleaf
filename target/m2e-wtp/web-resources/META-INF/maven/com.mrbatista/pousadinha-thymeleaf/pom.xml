@@ -9,20 +9,27 @@
   <packaging>war</packaging>
 
   <properties>
-		<project.buid.sourceEncoding>UTF-8</project.buid.sourceEncoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 
 		<java.version>21</java.version>
-		<maven-compiler-pluging.version>3.14.1</maven-compiler-pluging.version>		
+		<maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>		
+		
+		<!-- Spring MVC-->
+		<spring-framework.version>7.0.2</spring-framework.version>
+		
+		<!-- Servlet API-->
+		<servlet.version>6.0.0</servlet.version>
+
 	</properties>
 	
 	<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-pluging.version}</version> <!--
+				<version>${maven-compiler-plugin.version}</version> <!--
 				Certifique-se de usar a versão mais recente -->
 				<configuration>
 					<source>${java.version}</source> <!-- Versão do Java usada no
@@ -33,4 +40,35 @@
 			</plugin>
 		</plugins>
 	</build>  
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>${spring-framework.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<!-- Spring MVC-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
+	<!-- Servlet API-->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
 </project>
