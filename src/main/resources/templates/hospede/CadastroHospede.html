@@ -8,11 +8,16 @@
 <body>
 	<h1>Página funcionando!</h1>
 	
-	<form method="POST">
-	<span th:text="${msg}"></span><br/>
+	<form method="POST" th:object="${hospede}">	
+		<span th:text="${#fields.hasAnyErrors}"></span>
+		<div th:each="erro : ${#fields.detailedErrors()}">
+			<span th:text="${erro.message}"></span>
+		</div>
+	
+		<span th:text="${msg}"></span><br/>
 		<label>Nome</label><br/>
 		<input type="text" name="nome"><br/><br/>
-		
+			
 		<label>Sobrenome</label><br/>
 		<input type="text" name="sobrenome"><br/><br/>
 		
