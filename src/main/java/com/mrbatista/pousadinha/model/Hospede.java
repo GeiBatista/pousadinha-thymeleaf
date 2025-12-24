@@ -1,8 +1,13 @@
 package com.mrbatista.pousadinha.model;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Hospede {
 	
+	@NotBlank
 	private String nome;
+	
+	@NotBlank
 	private String sobrenome;
 	
 	public String getNome() {

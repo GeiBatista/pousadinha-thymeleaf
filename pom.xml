@@ -25,6 +25,10 @@
 		
 		<!-- Thymeleaf -->
 		<thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
+		
+		<!-- Hibernate Validation -->
+		<hibernate-validator.version>8.0.3.Final</hibernate-validator.version>
+
 
 	</properties>
 	
@@ -87,6 +91,13 @@
 			<scope>compile</scope>
 		</dependency>
 
+        <!-- Hibernate Validation -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+            <scope>compile</scope>
+         </dependency>
 
 	</dependencies>
 
