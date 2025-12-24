@@ -15,15 +15,14 @@ import jakarta.validation.Valid;
 public class HospedeController {
 	
 	@RequestMapping("/hospedes/novo")
-	public String novo(Model model) {
-		model.addAttribute(new Hospede());
+	public String novo(Hospede hospede) {
 		return "hospede/CadastroHospede";
 	}
 	
 	@PostMapping("/hospedes/novo")
 	public String salvar(@Valid Hospede hospede, BindingResult result, Model model, RedirectAttributes attributes) {
 		if (result.hasErrors()) {
-			return "hospede/CadastroHospede";
+			return novo(hospede);
 		}
 		attributes.addFlashAttribute("msg", "Hóspede salvo com sucesso!.");
 		System.out.println("Salvando hospede... " + hospede.getNome() + " " + hospede.getSobrenome());
