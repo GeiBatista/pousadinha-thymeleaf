@@ -28,4 +28,24 @@ public class HospedeController {
 		System.out.println("Salvando hospede... " + hospede.getNome() + " " + hospede.getSobrenome());
 		return "redirect:/hospedes/novo";
 	}
+	
+	@RequestMapping("/hospedes/lista")
+		public String listar(){
+		return "hospede/admin-index";
+	}
+	
+	@RequestMapping("/hospedes/MyPage")
+	public String listarMyPage(){
+		return "hospede/MyPage-index";
+	}
+	
+	@RequestMapping("/hospedes/hotelier")
+	public String listarHotelier(){
+		return "hotelier/hotelier-index";
+	}
+	
+	@RequestMapping("/hospedes/admin")
+	public String listarAdmin(){
+		return "admin/admin-index";
+	}
 }
