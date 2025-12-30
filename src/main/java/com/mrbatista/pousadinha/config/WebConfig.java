@@ -1,6 +1,5 @@
 package com.mrbatista.pousadinha.config;
 
-import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -17,6 +16,8 @@ import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ITemplateResolver;
 
 import com.mrbatista.pousadinha.controller.HospedeController;
+
+import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 
 @Configuration
 @ComponentScan(basePackageClasses = { HospedeController.class })
@@ -47,6 +48,8 @@ public class WebConfig implements WebMvcConfigurer {
     	SpringTemplateEngine engine = new SpringTemplateEngine();
     	engine.setEnableSpringELCompiler(true);
     	engine.setTemplateResolver(templateResolver());
+    	
+    	engine.addDialect(new LayoutDialect());
     	return engine;
     }
     
