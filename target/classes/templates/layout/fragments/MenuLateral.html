@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" >
+<head></head>
+<body>
+
+<div class="sidebar" id="sidebar" th:fragment="menuLateral">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="active"> <a href="/admin/admin-index.html"><i class="fas fa-tachometer-alt"></i> <span>Painel</span></a> </li>
+						<li class="list-divider"></li>
+						<li class="submenu"> <a href="#"><i class="fas fa-suitcase"></i> <span> Reservas </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="all-booking.html"> Todas as Reservas </a></li>
+								<li><a href="edit-booking.html"> Editar Reserva </a></li>
+								<li><a href="add-booking.html"> Adicionar Reserva </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Clientes </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="all-customer.html"> Todos os Clientes </a></li>
+								<li><a href="edit-customer.html"> Editar Cliente </a></li>
+								<li><a href="add-customer.html"> Adicionar Cliente </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span> Quartos </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="all-rooms.html">Todos os Quartos </a></li>
+								<li><a href="edit-room.html"> Editar Quartos </a></li>
+								<li><a href="add-room.html"> Adicionar Quartos </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Funcionários </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="all-staff.html">Todos os Funcionários </a></li>
+								<li><a href="edit-staff.html"> Editar Funcionário </a></li>
+								<li><a href="add-staff.html"> Adicionar Funcionário </a></li>
+							</ul>
+						</li>
+						<li> <a href="pricing.html"><i class="far fa-money-bill-alt"></i> <span>Preços</span></a> </li>
+						<li class="submenu"> <a href="#"><i class="fas fa-share-alt"></i> <span> Aplicativos </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="chat.html"><i class="fas fa-comments"></i><span> Chat </span></a></li>
+								<li class="submenu"> <a href="#"><i class="fas fa-video camera"></i> <span> Chamadas </span> <span class="menu-arrow"></span></a>
+									<ul class="submenu_class" style="display: none;">
+										<li><a href="voice-call.html"> Chamada de Voz </a></li>
+										<li><a href="video-call.html"> Chamada de Vídeo </a></li>
+										<li><a href="incoming-call.html"> Chamada Recebida </a></li>
+									</ul>
+								</li>
+								<li class="submenu"> <a href="#"><i class="fas fa-envelope"></i> <span> Email </span> <span class="menu-arrow"></span></a>
+									<ul class="submenu_class" style="display: none;">
+										<li><a href="compose.html">Compor Email </a></li>
+										<li><a href="inbox.html"> Caixa de Entrada </a></li>
+										<li><a href="mail-veiw.html"> Visualizar Email </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Empregados </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="employees.html">Lista de Empregados </a></li>
+								<li><a href="leaves.html">Licenças </a></li>
+								<li><a href="holidays.html">Feriados </a></li>
+								<li><a href="attendance.html"> Presenças </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="far fa-money-bill-alt"></i> <span> Contas </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="invoices.html">Faturas </a></li>
+								<li><a href="payments.html"> Pagamentos </a></li>
+								<li><a href="expenses.html"> Despesas </a></li>
+								<li><a href="taxes.html"> Impostos </a></li>
+								<li><a href="provident-fund.html"> Fundo de Previdência </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-book"></i> <span> Folha de Pagamento </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="salary.html">Salário do Funcionário </a></li>
+								<li><a href="salary-veiw.html">Holerite </a></li>
+							</ul>
+						</li>
+						<li> <a href="calendar.html"><i class="fas fa-calendar-alt"></i> <span>Calendário</span></a> </li>
+						<li class="submenu"> <a href="#"><i class="fe fe-table"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="blog.html">Blog </a></li>
+								<li><a href="blog-details.html">Visualizar Blog </a></li>
+								<li><a href="add-blog.html">Adicionar Blog </a></li>
+								<li><a href="edit-blog.html">Editar Blog </a></li>
+							</ul>
+						</li>
+						<li> <a th:href="@{/layout/admin/assets.html}"><i class="fas fa-cube"></i> <span>Ativos</span></a> </li>
+						<li> <a href="activities.html"><i class="far fa-bell"></i> <span>Atividades</span></a> </li>
+						<li class="submenu"> <a href="#"><i class="fe fe-table"></i> <span> Relatórios </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="expense-reports.html">Relatório de Despesas </a></li>
+								<li><a href="invoice-reports.html">Relatório de Faturas </a></li>
+							</ul>
+						</li>
+						<li> <a href="settings.html"><i class="fas fa-cog"></i> <span>Configurações</span></a> </li>
+						<li class="list-divider"></li>
+						<li class="menu-title mt-3"> <span>ELEMENTOS DE UI</span> </li>
+						<li class="submenu"> <a href="#"><i class="fas fa-laptop"></i> <span> Componentes </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="uikit.html">Kit de UI </a></li>
+								<li><a href="typography.html">Tipografia </a></li>
+								<li><a href="tabs.html"> Abas </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-edit"></i> <span> Formulários </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="form-basic-inputs.html">Entrada Básica </a></li>
+								<li><a href="form-input-groups.html">Grupos de Entrada </a></li>
+								<li><a href="form-horizontal.html">Formulário Horizontal </a></li>
+								<li><a href="form-vertical.html">Formulário Vertical </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-table"></i> <span> Tabelas </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="tables-basic.html">Tabela Básica </a></li>
+								<li><a href="tables-datatables.html">Tabela de Dados </a></li>
+							</ul>
+						</li>
+						<li class="list-divider"></li>
+						<li class="menu-title mt-3"> <span>EXTRAS</span> </li>
+						<li class="submenu"> <a href="#"><i class="fas fa-columns"></i> <span> Páginas </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="login.html">Entrar </a></li>
+								<li><a href="register.html">Registrar </a></li>
+								<li><a href="forgot-password.html">Esqueci a Senha </a></li>
+								<li><a href="change-password.html">Alterar Senha </a></li>
+								<li><a href="lock-screen.html">Tela de Bloqueio </a></li>
+								<li><a href="profile.html">Perfil </a></li>
+								<li><a href="gallery.html">Galeria </a></li>
+								<li><a href="error-404.html">Erro 404 </a></li>
+								<li><a href="error-500.html">Erro 500 </a></li>
+								<li><a href="blank-page.html">Página em Branco </a></li>
+							</ul>
+						</li>
+						<li class="submenu"> <a href="#"><i class="fas fa-share-alt"></i> <span> Multi Nível </span> <span class="menu-arrow"></span></a>
+							<ul class="submenu_class" style="display: none;">
+								<li><a href="">Nível 1 </a></li>
+								<li><a href="">Nível 2 </a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
