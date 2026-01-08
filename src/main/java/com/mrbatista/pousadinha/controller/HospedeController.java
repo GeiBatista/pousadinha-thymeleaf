@@ -30,7 +30,8 @@ public class HospedeController {
 	}
 		
 	@RequestMapping("/hospedes/admin")
-	public String listarAdmin(){
+	public String listarAdmdsin(Model model) {
+		model.addAttribute("paginaAtiva", "painel");
 		return "admin/admin-index";
 	}
 }

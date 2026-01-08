@@ -7,7 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BlogController {
 
 	@RequestMapping("/hospedes/blog")
-	public String listarBlog() {
+	public String blog() {
+		return "admin/blog";
+	}
+	
+	@RequestMapping("/hospedes/addBlog")
+	public String novo() {
 		return "admin/add-blog";
+	}
+	
+	@RequestMapping("/hospedes/blogDetails")
+	public String details() {
+		return "admin/blog-details";
 	}
 }

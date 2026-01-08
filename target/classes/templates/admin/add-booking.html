@@ -3,7 +3,9 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/LayoutPadrao}">
-<head></head>
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{/layout/admin/assets/css/bootstrap-datetimepicker.min.css}">
+</head>
 
 <body>
     <div class="content container-fluid" layout:fragment="conteudo">
@@ -119,6 +121,16 @@
         </div>
         <button type="button" class="btn btn-primary buttonedit1">Criar Reserva</button>
     </div>
+    <script th:src="@{/layout/admin/assets/js/moment.min.js}"></script>
+	<script th:src="@{/layout/admin/assets/js/bootstrap-datetimepicker.min.js}"></script>
+    <script>
+	$(function() {
+		$('#datetimepicker3').datetimepicker({
+			format: 'LT'
+		});
+	});
+	</script>
+    
 </body>
 
 </html>

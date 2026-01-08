@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RoomController {
 
 	@RequestMapping("/hospedes/addRoom")
-	public String listarRoom() {
+	public String novo() {
 		return "admin/add-room";
+	}
+
+	@RequestMapping("/hospedes/allRooms")
+	public String listarRoom() {
+		return "admin/all-rooms";
 	}
 }

@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CustomerController {
 
 	@RequestMapping("/hospedes/addCustomer")
-	public String listarBlog() {
+	public String novo() {
 		return "admin/add-customer";
+	}
+
+	@RequestMapping("/hospedes/allCustomer")
+	public String listarBlog() {
+		return "admin/all-customer";
 	}
 }

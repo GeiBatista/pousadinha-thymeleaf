@@ -4,16 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class AssetController {
+public class AttendanceController {
 	
-	@RequestMapping("/hospedes/assets")
+	@RequestMapping("/hospedes/attendance")
 	public String asset(){
-		return "admin/assets";
-	}
-	
-	@RequestMapping("/hospedes/addAssets")
-	public String novo(){
-		return "admin/add-assets";
+		return "admin/attendance";
 	}
 
 }
