@@ -20,4 +20,9 @@ public class BlogController {
 	public String details() {
 		return "admin/blog-details";
 	}
+	
+	@RequestMapping("/hospedes/editBlog")
+	public String editar(){
+		return "admin/edit-blog";
+	}
 }

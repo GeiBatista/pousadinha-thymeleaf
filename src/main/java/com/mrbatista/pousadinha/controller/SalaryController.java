@@ -11,4 +11,9 @@ public class SalaryController {
 		return "admin/add-salary";
 	}
 
+	@RequestMapping("/hospedes/editSalary")
+	public String editar(){
+		return "admin/edit-salary";
+	}
+
 }

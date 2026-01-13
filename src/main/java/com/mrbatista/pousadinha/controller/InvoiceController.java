@@ -10,5 +10,10 @@ public class InvoiceController {
 	public String listarAdmin(){
 		return "admin/create-invoice";
 	}
+	
+	@RequestMapping("/hospedes/editInvoice")
+	public String editar(){
+		return "admin/edit-invoice";
+	}
 
 }

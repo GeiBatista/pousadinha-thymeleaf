@@ -10,4 +10,9 @@ public class HolidayController {
 	public String listarBlog() {
 		return "admin/add-holiday";
 	}
+	
+	@RequestMapping("/hospedes/editHoliday")
+	public String editar(){
+		return "admin/edit-holiday";
+	}
 }

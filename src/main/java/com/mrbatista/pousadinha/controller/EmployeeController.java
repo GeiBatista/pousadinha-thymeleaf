@@ -7,7 +7,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class EmployeeController {
 
 	@RequestMapping("/hospedes/addEmployee")
-	public String listarBlog() {
+	public String listar() {
 		return "admin/add-employee";
+	}
+	
+	@RequestMapping("/hospedes/editEmployee")
+	public String editar(){
+		return "admin/edit-employee";
+	}
+	
+	@RequestMapping("/hospedes/employees")
+	public String employee() {
+		return "admin/employees";
 	}
 }

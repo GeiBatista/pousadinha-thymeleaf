@@ -11,4 +11,8 @@ public class TaxController {
 		return "admin/add-tax";
 	}
 
+	@RequestMapping("/hospedes/editTax")
+	public String editar(){
+		return "admin/edit-tax";
+	}
 }

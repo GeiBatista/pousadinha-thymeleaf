@@ -14,5 +14,10 @@ public class StaffController {
 	public String listarStaff(){
 		return "admin/all-staff";
 	}
+	
+	@RequestMapping("/hospedes/editStaff")
+	public String editar(){
+		return "admin/edit-staff";
+	}
 
 }

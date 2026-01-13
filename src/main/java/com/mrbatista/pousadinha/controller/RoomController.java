@@ -15,4 +15,9 @@ public class RoomController {
 	public String listarRoom() {
 		return "admin/all-rooms";
 	}
+	
+	@RequestMapping("/hospedes/editRoom")
+	public String editar(){
+		return "admin/edit-room";
+	}
 }

@@ -15,4 +15,9 @@ public class CustomerController {
 	public String listarBlog() {
 		return "admin/all-customer";
 	}
+	
+	@RequestMapping("/hospedes/editCustomer")
+	public String editar(){
+		return "admin/edit-customer";
+	}
 }

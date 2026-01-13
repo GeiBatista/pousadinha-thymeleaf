@@ -10,4 +10,9 @@ public class ProvidentFundController {
 	public String listarBlog() {
 		return "admin/add-provident-fund";
 	}
+	
+	@RequestMapping("/hospedes/editProvidentFund")
+	public String editar(){
+		return "admin/edit-provident-fund";
+	}
 }

@@ -16,4 +16,13 @@ public class LeaveController {
 		return "admin/add-leave-type";
 	}
 	
+	@RequestMapping("/hospedes/editLeave")
+	public String editar(){
+		return "admin/edit-leave";
+	}
+	
+	@RequestMapping("/hospedes/editLeaveType")
+	public String editarType(){
+		return "admin/edit-leave-type";
+	}
 }

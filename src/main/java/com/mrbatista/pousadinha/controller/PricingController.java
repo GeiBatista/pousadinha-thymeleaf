@@ -10,4 +10,9 @@ public class PricingController {
 	public String listarBlog() {
 		return "admin/add-pricing";
 	}
+	
+	@RequestMapping("/hospedes/editPricing")
+	public String editar(){
+		return "admin/edit-pricing";
+	}
 }

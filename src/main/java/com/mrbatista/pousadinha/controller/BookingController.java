@@ -15,4 +15,9 @@ public class BookingController {
 	public String listarBlog() {
 		return "admin/all-booking";
 	}
+	
+	@RequestMapping("/hospedes/editBooking")
+	public String editar(){
+		return "admin/edit-booking";
+	}
 }

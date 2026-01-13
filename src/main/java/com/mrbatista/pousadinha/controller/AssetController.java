@@ -16,4 +16,9 @@ public class AssetController {
 		return "admin/add-assets";
 	}
 
+	@RequestMapping("/hospedes/editAsset")
+	public String editar(){
+		return "admin/edit-asset";
+	}
+
 }
