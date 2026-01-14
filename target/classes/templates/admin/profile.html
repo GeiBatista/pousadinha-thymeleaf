@@ -5,20 +5,28 @@
 	layout:decorate="~{layout/LayoutPadrao}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<!-- header/sidebar removidos -->
-<div class="page-wrapper">
 <div class="content container-fluid" layout:fragment="conteudo">
-<h3 class="page-title">Perfil</h3>
+<div class="page-header mt-5">
+					<div class="row">
+						<div class="col">
+							<h3 class="page-title">Perfil</h3>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+								<li class="breadcrumb-item active">Perfil</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 <div class="row">
 					<div class="col-md-12">
 						<div class="profile-header">
 							<div class="row align-items-center">
-								<div class="col-auto profile-image">									<a href="#"> <img class="rounded-circle" alt="User Image" src="assets/img/profiles/avatar-02.jpg"> </a>
+								<div class="col-auto profile-image">									<a href="#"> <img class="rounded-circle" alt="User Image" th:src="@{/layout/admin/assets/img/profiles/avatar-18.jpg}"> </a>
 								</div>								<div class="col ml-md-n2 profile-user-info">
-									<h4 class="user-name mb-3">David Alvarez</h4>
+									<h4 class="user-name mb-3">Gei Batista</h4>
 									<h6 class="text-muted mt-1">Gerente</h6>
-									<div class="user-Location mt-1"><i class="fas fa-map-marker-alt"></i> Florida, Estados Unidos</div>
+									<div class="user-Location mt-1"><i class="fas fa-map-marker-alt"></i> Ibicoara, BA, Brasil</div>
 									<div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 								</div>								<div class="col-auto profile-btn"> <a href="" class="btn btn-primary">
 								Mensagem

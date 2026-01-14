@@ -5,11 +5,17 @@
 	layout:decorate="~{layout/LayoutPadrao}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<!-- header/sidebar removidos -->
-<div class="page-wrapper">
 <div class="content container-fluid" layout:fragment="conteudo">
-<h3 class="page-title">Pagamentos</h3>
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col">
+<div class="mt-5">
+<h4 class="card-title float-left mt-2">Pagamentos</h4>
+</div>
+</div>
+</div>
+</div>
+
 <div class="row">
 <div class="col-sm-12">
 <div class="card">
@@ -18,12 +24,12 @@
 <table class="datatable table table-stripped">
 <thead>
 <tr>
-<th>Invoice ID</th>
-<th>Customer Name</th>
-<th>Customer Age</th>
-<th>Payment Type</th>
-<th>Paid Date</th>
-<th>Paid Amount</th>
+<th>ID da Fatura</th>
+<th>Nome do Cliente</th>
+<th>Idade</th>
+<th>Tipo de Pagamento</th>
+<th>Data de Pagamento</th>
+<th>Valor Pago</th>
 </tr>
 </thead>
 <tbody>
@@ -58,9 +64,6 @@
 </div>
 </div>
 </div>
-</div>
-</div>
-
 </div>
 </body>
 </html>

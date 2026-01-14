@@ -5,10 +5,14 @@
 	layout:decorate="~{layout/LayoutPadrao}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<div class="page-wrapper">
-<div class="content container-fluid" layout:fragment="conteudo">
-<h3 class="page-title">Abas</h3>
+
+<!-- <div class="mt-5"> -->
+<div class="content container-fluid mt-5" layout:fragment="conteudo">
+<section class="comp-section">
+<div class="section-header">
+<h3 class="section-title">Tabs</h3>
+<div class="line"></div>
+</div>
 <div class="row">
 <div class="col-md-6">
 <div class="card">
@@ -17,7 +21,7 @@
 </div>
 <div class="card-body">
 <ul class="nav nav-tabs">
-<li class="nav-item"><a class="nav-link active" href="#basictab1" data-toggle="tab">Início</a></li>
+<li class="nav-item"><a class="nav-link active" href="#basictab1" data-toggle="tab">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#basictab2" data-toggle="tab">Perfil</a></li>
 <li class="nav-item"><a class="nav-link" href="#basictab3" data-toggle="tab">Mensagens</a></li>
 </ul>
@@ -278,10 +282,8 @@ Conteúdo da aba 3
 </div>
 </div>
 </div>
+</section>
 </div>
-</div>
-</div>
-</div>
-</div>
+<!-- </div> -->
 </body>
 </html>

@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorate="~{layout/LayoutPadrao}">
+	layout:decorate="~{layout/LayoutSettings}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<!-- header/sidebar removidos -->
-<div class="page-wrapper">
-<div class="content container-fluid" layout:fragment="conteudo">
+<div class="content mt-5" layout:fragment="conteudo">
+<div class="row">
+<div class="col-lg-8 offset-lg-2">
 <h3 class="page-title">Configurações de Notificações</h3>
 <div>
 <ul class="list-group notification-list mt-4">
@@ -48,6 +47,7 @@ Bate-papo
 </div>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </div>

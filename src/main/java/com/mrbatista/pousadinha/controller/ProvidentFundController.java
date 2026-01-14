@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ProvidentFundController {
 
+	@RequestMapping("/hospedes/providentFund")
+	public String providentFund() {
+		return "admin/provident-fund";
+	}
+
 	@RequestMapping("/hospedes/addProvidentFund")
 	public String listarBlog() {
 		return "admin/add-provident-fund";

@@ -10,5 +10,15 @@ public class CallController {
 	private String incomingCall() {
 		return "admin/incoming-call";
 	}
+	
+	@RequestMapping("/hospedes/videoCall")
+	private String videoCall() {
+		return "admin/video-call";
+	}
+	
+	@RequestMapping("/hospedes/voiceCall")
+	private String voiceCall() {
+		return "admin/voice-call";
+	}
 
 }

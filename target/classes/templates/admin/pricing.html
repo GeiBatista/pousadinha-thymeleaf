@@ -5,11 +5,18 @@
 	layout:decorate="~{layout/LayoutPadrao}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<!-- header/sidebar removidos -->
-<div class="page-wrapper">
+
 <div class="content container-fluid" layout:fragment="conteudo">
-<h3 class="page-title">Preços</h3>
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col">
+<div class="mt-5">
+<h4 class="card-title float-left mt-2">Preços</h4>
+<a href="add-pricing.html" class="btn btn-primary float-right veiwbutton">Adicionar Preço</a>
+</div>
+</div>
+</div>
+</div>
 <div class="row">
 <div class="col-sm-12">
 <section class="pricing py-5">
@@ -95,9 +102,6 @@
 </section>
 </div>
 </div>
-</div>
-</div>
-
 </div>
 </body>
 </html>

@@ -15,5 +15,10 @@ public class EmailController {
 	private String inbox() {
 		return "admin/inbox";
 	}
+	
+	@RequestMapping("/hospedes/mailVeiw")
+	private String mailVeiw() {
+		return "admin/mail-veiw";
+	}
 
 }

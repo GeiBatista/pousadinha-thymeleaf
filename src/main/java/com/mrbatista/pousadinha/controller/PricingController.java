@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PricingController {
 
+	@RequestMapping("/hospedes/pricing")
+	public String pricing() {
+		return "admin/pricing";
+	}
+
 	@RequestMapping("/hospedes/addPricing")
 	public String listarBlog() {
 		return "admin/add-pricing";

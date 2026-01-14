@@ -39,9 +39,11 @@ public class PaginasController {
 	@RequestMapping("/hospedes/editProfile")
 	public String editarProfile(){
 		return "admin/edit-profile";
-	}
-	
-	
+	}	
+	@RequestMapping("/hospedes/profile")
+	public String profile(){
+		return "admin/profile";
+	}	
 
 }
 

@@ -5,11 +5,18 @@
 	layout:decorate="~{layout/LayoutPadrao}">
 <head></head>
 <body>
-<div class="main-wrapper">
-<!-- header/sidebar removidos -->
-<div class="page-wrapper">
 <div class="content container-fluid" layout:fragment="conteudo">
-<h3 class="page-title">Impostos</h3>
+<div class="page-header">
+<div class="row align-items-center">
+<div class="col">
+<div class="mt-5">
+<h4 class="card-title float-left mt-2">Impostos</h4>
+<a href="add-tax.html" class="btn btn-primary float-right veiwbutton">Adicionar Imposto</a>
+<div></div><br><br><br>
+</div>
+</div>
+</div>
+
 <div class="row">
 <div class="col-sm-12">
 <div class="card card-table">
@@ -95,8 +102,6 @@ Ativo
 </div>
 </div>
 
-</div>
-</div>
 </div>
 </body>
 </html>

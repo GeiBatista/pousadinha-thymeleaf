@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SettingsController {
 	
+	@RequestMapping("/hospedes/settings")
+	private String settings() {
+		return "admin/settings";
+	}
+	
 	@RequestMapping("/hospedes/emailSettings")
 	private String configuracaoEmail() {
 		return "admin/email-settings";
@@ -16,10 +21,25 @@ public class SettingsController {
 		return "admin/localization";
 	}
 	
-//	@RequestMapping("/hospedes/editProfile")
-//	public String editarProfile(){
-//		return "admin/edit-profile";
-//	}
+	@RequestMapping("/hospedes/notificationsSettings")
+	public String notificationsSettings(){
+		return "admin/notifications-settings";
+	}
+
+	@RequestMapping("/hospedes/rolesPermissions")
+	public String rolesPermissions(){
+		return "admin/roles-permissions";
+	}
+
+	@RequestMapping("/hospedes/salarySettings")
+	public String salarySettings(){
+		return "admin/salary-settings";
+	}
+	
+	@RequestMapping("/hospedes/themeSettings")
+	public String themeSettings(){
+		return "admin/theme-settings";
+	}
 
 }
 
