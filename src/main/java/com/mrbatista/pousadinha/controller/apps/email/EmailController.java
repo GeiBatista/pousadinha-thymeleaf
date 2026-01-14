@@ -11,4 +11,9 @@ public class EmailController {
 		return "admin/compose";
 	}
 
+	@RequestMapping("/hospedes/inbox")
+	private String inbox() {
+		return "admin/inbox";
+	}
+
 }

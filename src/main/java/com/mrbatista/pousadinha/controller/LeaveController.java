@@ -6,9 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LeaveController {
 
+	@RequestMapping("/hospedes/leaves")
+	public String leaves() {
+		return "admin/leaves";
+	}
+	
 	@RequestMapping("/hospedes/addLeave")
 	public String listarLicenca() {
 		return "admin/add-leave";
+	}
+	
+	@RequestMapping("/hospedes/leaveType")
+	public String leaveType() {
+		return "admin/leave-type";
 	}
 	
 	@RequestMapping("/hospedes/addLeaveType")

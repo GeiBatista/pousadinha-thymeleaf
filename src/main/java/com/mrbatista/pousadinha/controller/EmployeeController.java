@@ -20,4 +20,9 @@ public class EmployeeController {
 	public String employee() {
 		return "admin/employees";
 	}
+	
+	@RequestMapping("/hospedes/holidays")
+	public String holidays() {
+		return "admin/holidays";
+	}
 }

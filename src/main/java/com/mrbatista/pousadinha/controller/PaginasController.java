@@ -21,6 +21,11 @@ public class PaginasController {
 		return "admin/error-500";
 	}
 	
+	@RequestMapping("/hospedes/gallery")
+	public String gallery(){
+		return "admin/gallery";
+	}
+	
 	@RequestMapping("/hospedes/changePassword")
 	public String changePassword(){
 		return "admin/change-password";
@@ -35,6 +40,8 @@ public class PaginasController {
 	public String editarProfile(){
 		return "admin/edit-profile";
 	}
+	
+	
 
 }
 

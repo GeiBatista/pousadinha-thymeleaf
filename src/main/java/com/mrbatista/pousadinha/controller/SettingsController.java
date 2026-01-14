@@ -11,11 +11,11 @@ public class SettingsController {
 		return "admin/email-settings";
 	}
 	
-//	@RequestMapping("/hospedes/changePassword")
-//	public String changePassword(){
-//		return "admin/change-password";
-//	}
-//	
+	@RequestMapping("/hospedes/localization")
+	public String localization(){
+		return "admin/localization";
+	}
+	
 //	@RequestMapping("/hospedes/editProfile")
 //	public String editarProfile(){
 //		return "admin/edit-profile";
